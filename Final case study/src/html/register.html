@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div id="commonHeader"></div>
+    <article>
+      <section class="quotes">
+        <h1>Signup</h1>
+        <p>we do not share your personal details with anyone</p>
+      </section>
+      <section class="signup">
+        <label>First Name</label>
+        <input type="text" required />
+        <input type="text" placeholder="Last Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button class="btn" onclick="HomePage()">Signup</button>
+      </section>
+    </article>
+    <footer>Copyright 2011-2018 Sabka Bazzar Grocery Supplies Pvt.Ltd</footer>
+    <script>
+      function HomePage() {
+        window.location.replace("homePage.html");
+      }
+    </script>
+    <script src="/src/js/commonheader.js"></script>
+    <script src="/src/js/home.js"></script>
+    <link rel="stylesheet" href="/src/css/homePage.css" />
+    <link rel="stylesheet" href="/src/scss/signIn.css" />
+  </body>
+</html>

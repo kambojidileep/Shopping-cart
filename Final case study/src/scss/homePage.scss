@@ -1,0 +1,137 @@
+$dark-pink: #d10256;
+$dark-grey: #7c7c7c;
+$light-grey: #dcdcdc;
+
+@mixin nav-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: $dark-grey;
+  box-sizing: border-box;
+}
+body {
+  margin: 5px 80px;
+  color: $dark-grey;
+}
+
+nav {
+  @include nav-display;
+  .header__nav {
+    @include nav-display;
+  }
+  a:-webkit-any-link {
+    text-decoration: none;
+    color: $dark-grey;
+  }
+  .header__nav-links {
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+  }
+  .header__nav-login {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: -13px;
+  }
+  .header__nav-cart {
+    background-color: $light-grey;
+    position: relative;
+    bottom: -18px;
+  }
+  .cart {
+    width: 30px;
+    height: 30px;
+  }
+  box-shadow: 0px 15px 10px -20px #111;
+}
+
+//carousel
+
+.carousel {
+  margin: 0px auto;
+  position: relative;
+  display: flex;
+  height: 150%;
+  width: 100%;
+  overflow: hidden;
+
+  .carousel__sale-offer {
+  }
+
+  .carousel__btn {
+    background-color: black;
+    text-transform: uppercase;
+    opacity: 50%;
+    padding: 3px;
+    border: none;
+  }
+}
+.carousel__btn-prev {
+  // transform: translate(0, -50%);
+}
+.carousel__btn-next {
+  // transform: translate(0, -50%);
+}
+.carousel__btn-dots {
+  position: absolute;
+}
+
+.carousel__btn-dot {
+  height: 5px;
+  width: 5px;
+  margin-right: 10px;
+  background-color: $dark-grey;
+  border: 2px black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+//categories
+#categories {
+  .Categories-single:nth-child(odd) {
+    //border: 5px solid green;
+    .card__categorie-img {
+      order: 0;
+    }
+  }
+
+  .Categories-single {
+    display: flex;
+    justify-content: space-between;
+    margin: 20% 0%;
+    align-items: center;
+
+    box-shadow: 0px 15px 10px -20px #111;
+    h5 {
+      font-size: 20px;
+      color: black;
+    }
+    p {
+      color: black;
+    }
+  }
+  .card-body {
+    text-align: center;
+  }
+  .card__categorie-img {
+    height: 180px;
+    width: 300px;
+    order: 2;
+  }
+}
+.cart-logo {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+footer {
+  background-color: $light-grey;
+  padding: 10px;
+  color: black;
+}

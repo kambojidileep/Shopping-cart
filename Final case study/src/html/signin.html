@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="commonHeader"></div>
+    <article>
+      <section class="quotes">
+        <h1>Login</h1>
+        <p>Get access to your Orders,Wishlist and Recommendations</p>
+      </section>
+      <section class="login">
+        <label>Email</label>
+        <input type="email" required />
+        <input type="password" placeholder="Password" required />
+        <button class="btn" onclick="HomePage()">Login</button>
+      </section>
+    </article>
+    <script>
+      function HomePage() {
+        window.location.replace("homePage.html");
+      }
+    </script>
+    <script src="/src/js/commonheader.js"></script>
+    <script src="/src/js/home.js"></script>
+    <link rel="stylesheet" href="/src/css/homePage.css" />
+    <link rel="stylesheet" href="/src/scss/signIn.css" />
+    <footer>Copyright 2011-2018 Sabka Bazzar Grocery Supplies Pvt.Ltd</footer>
+  </body>
+</html>
